@@ -4,7 +4,7 @@
             <div class="text-center font-serif sm:text-3xl text-xl sm:py-5">Add games with correct scores:</div>
             <div class="sm:mt-5 mt-2 sm:pt-4 pt-2" v-if="matches.length != 0">
                 <p class="text-center">*you can add more matches as you like</p>
-                <div  class="sm:w-3/4  bg-red-400 py-5 my-5 shadow  mx-auto flex justify-between rounded" v-for="match in matches">
+                <div  class="sm:w-3/4  bg-blue-300 py-5 my-5 shadow  mx-auto flex justify-between rounded" v-for="match in matches">
                     <div class="w-[30%] text-center font-bold sm:text-3xl text-xl  my-auto">
                         <p>{{match.team_a}}</p>
                     </div>
@@ -204,7 +204,7 @@ const updateMatches = ()=>{
         }
     })
 
-    router.push('/dashbord')
+    router.push('/Dashbord')
     matches.value = []
 }
 </script>

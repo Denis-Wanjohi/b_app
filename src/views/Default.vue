@@ -2,7 +2,7 @@
     <div>
         <div class="sm:w-3/4 h-screen  sm:mx-auto">
             <div class="text-center font-serif text-3xl py-5">Sure bet selection games:</div>
-            <p class="text-center text-gray-700">
+            <p class="text-center text-gray-700" v-if="matches.length != 0">
                 <router-link class="font-bold text-blue-500 underline" to="/login">
                    Login 
                 </router-link>
@@ -28,6 +28,9 @@
                         <p>{{match.team_b}}</p>
                     </div>
                 </div>
+            </div>
+            <div v-if="matches.length == 0">
+                <p class="text-center">Currently there are no uploaded games!</p>
             </div>
         </div>
     </div>

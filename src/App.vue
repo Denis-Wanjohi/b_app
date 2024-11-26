@@ -47,6 +47,9 @@ const logout = ()=>{
       <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
         <RouterLink to="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Correct Scores</RouterLink>
       </div>
+      <router-link v-if="user().authenticated == false" to="/login"  class="relative rounded-md h-fit my-auto mr-2 font-bold px-2 bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+        Login
+      </router-link>
       
     </div>
     <div class="pr-3 flex justify-between sm:hidden block">

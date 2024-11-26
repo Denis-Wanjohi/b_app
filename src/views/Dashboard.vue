@@ -11,17 +11,17 @@
                     </div>
                 </div>
                     <div class="flex justify-between ">
-                        <div class="w-[30%] text-center font-bold sm:text-3xl text-xl  my-auto">
+                        <div class="w-[30%] text-center font-bold sm:text-3xl text-sm  my-auto">
                             <p>{{match.team_a}}</p>
                         </div>
                         <div class="w-[30%]">
                         <div class="sm:flex sm:justify-evenly">
                                 <p class="sm:text-sm text-xs text-center"> 
-                                    <span class="font-bold text-nowrap">Date: </span>
+                                    <span class="font-bold text-nowrap"></span>
                                     {{ match.date }}  
                                 </p>
                                 <p class="sm:text-sm text-xs text-center"> 
-                                    <span class="font-bold">Time: </span>
+                                    <span class="font-bold"></span>
                                     {{ match.time }} 
                                 </p>
                             </div>
@@ -37,11 +37,14 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="w-[30%] text-center font-bold sm:text-3xl text-xl  my-auto">
+                        <div class="w-[30%] text-center font-bold sm:text-3xl text-sm  my-auto">
                             <p>{{match.team_b}}</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div v-if="matches.length == 0">
+                <p class="text-center">Currently there are no games uploaded!</p>
             </div>
         </div>
     </div>
