@@ -204,7 +204,7 @@ const updateMatches = ()=>{
         }
     })
 
-    router.push('/Dashbord')
+    router.push('/dashboard')
     matches.value = []
 }
 </script>
