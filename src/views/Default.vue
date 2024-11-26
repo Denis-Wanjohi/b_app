@@ -1,7 +1,6 @@
 <template>
     <div>
         <div class="sm:w-3/4 h-screen  sm:mx-auto">
-            {{ Math.floor(Math.random() * 10000) }}
             <div class="text-center font-serif text-3xl py-5">Sure bet selection games:</div>
             <p class="text-center text-gray-700">
                 <router-link class="font-bold text-blue-500 underline" to="/login">
